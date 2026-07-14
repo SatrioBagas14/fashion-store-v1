@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>UrbanWear</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+    <div class="container">
+
+        <a class="navbar-brand fw-bold fs-3" href="#">
+            UrbanWear
+        </a>
+
+        <div class="d-flex align-items-center gap-3">
+
+            <button
+                type="button"
+                class="btn btn-dark position-relative"
+                id="cartButton"
+                data-bs-toggle="modal"
+                data-bs-target="#cartModal"
+            >
+                <i class="bi bi-cart3"></i>
+
+                <span
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                    id="cartCount"
+                >
+                    0
+                </span>
+            </button>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu"
+                aria-controls="navbarMenu"
+                aria-expanded="false"
+                aria-label="Buka navigasi"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#home">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#produk">Produk</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#tentang">Tentang</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#kontak">Kontak</a>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div class="container">
+
+            <div class="row align-items-center min-vh-100">
+
+                <div class="col-lg-6">
+
+                    <span class="text-uppercase text-secondary fw-bold">
+                        New Collection 2026
+                    </span>
+
+                    <h1 class="display-2 fw-bold mt-3">
+                        Modern Fashion
+                        <br>
+                        For Everyone
+                    </h1>
+
+                    <p class="lead text-muted mt-4">
+                        Temukan koleksi fashion terbaru dengan desain modern,
+                        kualitas premium, dan harga terbaik untuk menunjang
+                        gaya sehari-hari.
+                    </p>
+
+                    <a href="#produk" class="btn btn-dark btn-lg mt-3">
+                        Shop Now
+                    </a>
+
+                </div>
+
+                <div class="col-lg-6 text-center">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=900&q=80"
+                        class="img-fluid hero-image"
+                        alt="Fashion Model"
+                    >
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Kategori -->
+    <section id="kategori" class="py-5">
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <h2 class="fw-bold">
+                    Shop by Category
+                </h2>
+
+                <p class="text-muted">
+                    Temukan kategori fashion favoritmu.
+                </p>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-6 col-md-3">
+                    <div class="card border-0 shadow-sm">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top"
+                            alt="T-Shirt"
+                        >
+
+                        <div class="card-body text-center">
+                            <h5>T-Shirt</h5>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="card border-0 shadow-sm">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top"
+                            alt="Hoodie"
+                        >
+
+                        <div class="card-body text-center">
+                            <h5>Hoodie</h5>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="card border-0 shadow-sm">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top"
+                            alt="Jacket"
+                        >
+
+                        <div class="card-body text-center">
+                            <h5>Jacket</h5>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="card border-0 shadow-sm">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top"
+                            alt="Shoes"
+                        >
+
+                        <div class="card-body text-center">
+                            <h5>Shoes</h5>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="produk" class="py-5 bg-white">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <span class="text-uppercase text-secondary fw-bold">
+                Our Collection
+            </span>
+
+            <h2 class="fw-bold mt-2">
+                Featured Products
+            </h2>
+
+            <p class="text-muted">
+                Pilihan produk favorit dengan desain modern dan kualitas terbaik.
+            </p>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-6 col-lg-3">
+                <div class="card product-card h-100 border-0 shadow-sm">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=800&q=80"
+                        class="card-img-top product-image"
+                        alt="Oversized Hoodie"
+                    >
+
+                    <div class="card-body d-flex flex-column">
+
+                        <span class="text-muted small">
+                            Hoodie
+                        </span>
+
+                        <h5 class="fw-bold mt-2">
+                            Oversized Hoodie
+                        </h5>
+
+                        <p class="rating mb-2">
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+</p>
+
+                        <p class="fw-bold fs-5">
+                            Rp349.000
+                        </p>
+
+                        <button
+                            type="button"
+                            class="btn btn-dark mt-auto add-to-cart"
+                            data-name="Oversized Hoodie"
+                            data-price="349000"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="card product-card h-100 border-0 shadow-sm">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=800&q=80"
+                        class="card-img-top product-image"
+                        alt="Basic T-Shirt"
+                    >
+
+                    <div class="card-body d-flex flex-column">
+
+                        <span class="text-muted small">
+                            T-Shirt
+                        </span>
+
+                        <h5 class="fw-bold mt-2">
+                            Basic T-Shirt
+                        </h5>
+
+                     <p class="rating mb-2">
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+</p>
+
+                        <p class="fw-bold fs-5">
+                            Rp199.000
+                        </p>
+
+                        <button
+                            type="button"
+                            class="btn btn-dark mt-auto add-to-cart"
+                            data-name="Basic T-Shirt"
+                            data-price="199000"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="card product-card h-100 border-0 shadow-sm">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=800&q=80"
+                        class="card-img-top product-image"
+                        alt="Premium Jacket"
+                    >
+
+                    <div class="card-body d-flex flex-column">
+
+                        <span class="text-muted small">
+                            Jacket
+                        </span>
+
+                        <h5 class="fw-bold mt-2">
+                            Premium Jacket
+                        </h5>
+
+                       <p class="rating mb-2">
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+</p>
+
+                        <p class="fw-bold fs-5">
+                            Rp499.000
+                        </p>
+
+                        <button
+                            type="button"
+                            class="btn btn-dark mt-auto add-to-cart"
+                            data-name="Premium Jacket"
+                            data-price="499000"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="card product-card h-100 border-0 shadow-sm">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80"
+                        class="card-img-top product-image"
+                        alt="Urban Sneakers"
+                    >
+
+                    <div class="card-body d-flex flex-column">
+
+                        <span class="text-muted small">
+                            Shoes
+                        </span>
+
+                        <h5 class="fw-bold mt-2">
+                            Urban Sneakers
+                        </h5>
+
+                       <p class="rating mb-2">
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+</p>
+
+                        <p class="fw-bold fs-5">
+                            Rp599.000
+                        </p>
+
+                        <button
+                            type="button"
+                            class="btn btn-dark mt-auto add-to-cart"
+                            data-name="Urban Sneakers"
+                            data-price="599000"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="tentang" class="py-5 bg-light">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-6">
+
+                <img
+                    src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=900&q=80"
+                    class="img-fluid about-image"
+                    alt="UrbanWear Store"
+                >
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <span class="text-uppercase text-secondary fw-bold">
+                    About UrbanWear
+                </span>
+
+                <h2 class="fw-bold mt-2 mb-4">
+                    Fashion Modern dengan Kualitas Terbaik
+                </h2>
+
+                <p class="text-muted">
+                    UrbanWear menghadirkan koleksi fashion modern yang nyaman,
+                    berkualitas, dan cocok digunakan untuk berbagai aktivitas
+                    sehari-hari.
+                </p>
+
+                <div class="row g-3 mt-3">
+
+                    <div class="col-sm-6">
+                        <div class="benefit-box">
+                            <h5 class="fw-bold">
+                                <i class="bi bi-patch-check-fill me-2"></i>
+                                Premium Quality
+                            </h5>
+
+                            <p class="text-muted mb-0">
+                                Material pilihan yang nyaman dan tahan lama.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="benefit-box">
+                            <h5 class="fw-bold">
+                                <i class="bi bi-truck me-2"></i>
+                                Fast Delivery
+                            </h5>
+
+                            <p class="text-muted mb-0">
+                                Pengiriman cepat dan aman ke seluruh Indonesia.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="benefit-box">
+                            <h5 class="fw-bold">
+                                <i class="bi bi-shield-check me-2"></i>
+                                Original Product
+                            </h5>
+
+                            <p class="text-muted mb-0">
+                                Produk berkualitas dan sesuai dengan deskripsi.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="benefit-box">
+                            <h5 class="fw-bold">
+                                <i class="bi bi-headset me-2"></i>
+                                Customer Support
+                            </h5>
+
+                            <p class="text-muted mb-0">
+                                Tim kami siap membantu kebutuhan pelanggan.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="testimoni" class="py-5">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <span class="text-uppercase text-secondary fw-bold">
+                Testimonial
+            </span>
+
+            <h2 class="fw-bold mt-2">
+                Apa Kata Pelanggan?
+            </h2>
+
+            <p class="text-muted">
+                Beberapa ulasan dari pelanggan UrbanWear.
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+
+                <div class="card border-0 shadow-sm h-100 text-center p-4">
+
+                    <div class="fs-4 text-warning mb-3">
+                        ★★★★★
+                    </div>
+
+                    <p class="fst-italic">
+                        "Bahannya premium banget, nyaman dipakai dan jahitannya rapi."
+                    </p>
+
+                    <h5 class="fw-bold mt-3">
+                        Andi Pratama
+                    </h5>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="card border-0 shadow-sm h-100 text-center p-4">
+
+                    <div class="fs-4 text-warning mb-3">
+                        ★★★★★
+                    </div>
+
+                    <p class="fst-italic">
+                        "Pengiriman cepat dan produknya sesuai foto."
+                    </p>
+
+                    <h5 class="fw-bold mt-3">
+                        Sinta Putri
+                    </h5>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="card border-0 shadow-sm h-100 text-center p-4">
+
+                    <div class="fs-4 text-warning mb-3">
+                        ★★★★★
+                    </div>
+
+                    <p class="fst-italic">
+                        "Harga sesuai kualitas. Pasti bakal beli lagi."
+                    </p>
+
+                    <h5 class="fw-bold mt-3">
+                        Rizky Maulana
+                    </h5>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer id="kontak" class="bg-dark text-white pt-5 pb-3">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-4">
+
+                <h3 class="fw-bold">
+                    UrbanWear
+                </h3>
+
+                <p class="text-white-50 mt-3">
+                    Fashion modern dengan kualitas terbaik untuk menemani gaya hidupmu setiap hari.
+                </p>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <h5 class="fw-bold">
+                    Quick Links
+                </h5>
+
+                <ul class="list-unstyled mt-3">
+
+                    <li><a href="#home" class="text-white text-decoration-none">Home</a></li>
+                    <li><a href="#produk" class="text-white text-decoration-none">Produk</a></li>
+                    <li><a href="#tentang" class="text-white text-decoration-none">Tentang</a></li>
+                    <li><a href="#kontak" class="text-white text-decoration-none">Kontak</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <h5 class="fw-bold">
+                    Hubungi Kami
+                </h5>
+
+                <p class="mt-3 mb-1">
+                    📞 0812-3456-7890
+                </p>
+
+                <p class="mb-1">
+                    📧 urbanwear@email.com
+                </p>
+
+                <p>
+                    📍 Jakarta, Indonesia
+                </p>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p class="text-center text-white-50 mb-0">
+            © 2026 UrbanWear. Created by Satrio Bagaskoro.
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- Cart Modal -->
+<div
+    class="modal fade"
+    id="cartModal"
+    tabindex="-1"
+>
+
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h5 class="modal-title">
+                    🛒 Keranjang Belanja
+                </h5>
+
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+            <div class="modal-body">
+
+                <ul
+                    id="cartItems"
+                    class="list-group mb-3">
+                </ul>
+
+                <h5>
+                    Total :
+                    <span id="cartTotalPrice">
+                        Rp0
+                    </span>
+                </h5>
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal">
+                    Tutup
+                </button>
+
+                <button
+                    class="btn btn-success"
+                    id="checkoutBtn">
+                    Checkout
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+    <!-- JavaScript -->
+    <script src="js/app.js"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+</html>

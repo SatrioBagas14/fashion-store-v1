@@ -1,0 +1,207 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8f9fa;
+    padding-top: 76px;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: #ffffff !important;
+}
+
+.navbar-brand {
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #000;
+}
+
+#cartButton {
+    min-width: 110px;
+}
+
+/* Hero */
+.hero {
+    background: #ffffff;
+}
+
+.hero h1 {
+    line-height: 1.1;
+}
+
+.hero-image {
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Buttons */
+.btn-dark {
+    padding: 12px 35px;
+    border-radius: 30px;
+    transition: 0.3s ease;
+}
+
+.btn-dark:hover {
+    transform: translateY(-3px);
+}
+
+/* Category */
+#kategori img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+#kategori .card {
+    height: 100%;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+#kategori .card:hover {
+    transform: translateY(-10px);
+}
+
+/* Products */
+.product-card {
+    height: 100%;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important;
+}
+
+.product-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: 0.4s ease;
+}
+
+.product-card:hover .product-image {
+    transform: scale(1.05);
+}
+
+.product-card .btn {
+    border-radius: 25px;
+}
+
+.product-card .fw-bold {
+    color: #111827;
+}
+
+.rating {
+    min-height: 20px;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.rating .bi-star-fill {
+    font-size: 12px;
+    line-height: 1;
+}
+
+/* About */
+.about-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.benefit-box {
+    height: 100%;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 15px;
+    transition: 0.3s ease;
+}
+
+.benefit-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-box i {
+    color: #212529;
+}
+
+/* Testimonial */
+#testimoni .card {
+    border-radius: 16px;
+    transition: 0.3s ease;
+}
+
+#testimoni .card:hover {
+    transform: translateY(-6px);
+}
+
+/* Footer */
+footer li {
+    margin-bottom: 6px;
+}
+
+footer a:hover {
+    color: #ffc107 !important;
+}
+
+/* Mobile */
+@media (max-width: 991px) {
+    body {
+        padding-top: 66px;
+    }
+
+    .navbar {
+        min-height: 66px;
+    }
+
+    .navbar .container {
+        flex-wrap: nowrap;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem !important;
+    }
+
+    #cartButton {
+        width: 48px;
+        height: 40px;
+        min-width: 48px;
+        padding: 0;
+        border-radius: 12px;
+    }
+
+    .hero {
+        padding-top: 30px;
+    }
+
+    .hero-image {
+        margin-top: 35px;
+    }
+
+    .about-image {
+        height: 350px;
+    }
+}
